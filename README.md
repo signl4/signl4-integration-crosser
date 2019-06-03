@@ -8,7 +8,7 @@ Mobile alerting with tracking, duty planning and escalation for Crosser.
 Crosser an Industrial IoT platform for easy integration and automation of connected devices.
 
 
-![SIGNL4](file://crosser-signl4.png)
+![SIGNL4](crosser-signl4.png)
 
 ## How it Works
 
@@ -39,7 +39,7 @@ In our example we create a sample flow that receives OPC UA data, processes them
 
 SIGNL4 is a mobile alert notification app for powerful alerting, alert management and mobile assignment of work items. Get the app at https://www.signl4.com.
 
-![Crosser Flow](file://crosser-flow.png)
+![Crosser Flow](crosser-flow.png)
 
 In order to show the concept in a simplified way we also use a data generator that is capable to generate sample data. This makes it easy to simulate alerts.
 
@@ -54,12 +54,12 @@ A Crosser (https://crosser.io) account
 1. Create the Data Generator  
 Logon to the Crosser portal and go to Flows. Here you can add a Data Generator action. This one simulates random event data in certain intervals.
 
-![Data Generator](file://crosser-data-generator.png)
+![Data Generator](crosser-data-generator.png)
 
 2. Date Aggregation (Optional)  
 The next step in the flow is the aggregation. This is optional but since it is a powerful feature we show it here. The idea is to read events over a certain period of time and then aggregate the data. In our case we are interested in the average temperature.
 
-![Aggregate](file://crosser-aggregate.png)
+![Aggregate](crosser-aggregate.png)
 
 3. Property Mapper  
 The idea of the Property Mapper is to assemble the message data we would like to send to SIGNL4. This is all JSON.
@@ -72,7 +72,7 @@ will become this in JSON:
 
 {"Message": "Temperature too high."}
 
-![Property Mapper](file://crosser-property-mapper.png)
+![Property Mapper](crosser-property-mapper.png)
 
 Besides the property mapping we can also add conditions here. We can do so in the Common section of the Property Mapper.
 
