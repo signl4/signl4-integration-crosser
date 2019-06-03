@@ -4,9 +4,7 @@ Mobile alerting with tracking, duty planning and escalation for Crosser.
 
 ## Why SIGNL4
 
-
 Crosser an Industrial IoT platform for easy integration and automation of connected devices.
-
 
 ![SIGNL4](crosser-signl4.png)
 
