@@ -51,17 +51,20 @@ A Crosser (https://crosser.io) account
 
 #### Integration Steps
 
-1. Create the Data Generator  
+1. Create the Data Generator
+
 Logon to the Crosser portal and go to Flows. Here you can add a Data Generator action. This one simulates random event data in certain intervals.
 
 ![Data Generator](crosser-data-generator.png)
 
-2. Date Aggregation (Optional)  
+2. Date Aggregation (Optional)
+
 The next step in the flow is the aggregation. This is optional but since it is a powerful feature we show it here. The idea is to read events over a certain period of time and then aggregate the data. In our case we are interested in the average temperature.
 
 ![Aggregate](crosser-aggregate.png)
 
-3. Property Mapper  
+3. Property Mapper
+
 The idea of the Property Mapper is to assemble the message data we would like to send to SIGNL4. This is all JSON.
 
 The property:
@@ -82,16 +85,19 @@ agg.average > 10
 
 Which means that the average temperature must be greater than 10 in order to proceed with the flow.
 
-4. Make it JSON  
+4. Make it JSON
+
 The next step is to JSONify the properties and values. In order to do so you can just add the JSON action and keep all the default properties there.
 
-5. Send SIGNL4 Alert  
+5. Send SIGNL4 Alert
+
 Last but not least we add our SIGNL4 action. This is an HTTP Request. The URL is your SIGNL4 webhook with your team secret:
 https://connect.signl4.com/webhook/<team-secret>
 
 The method (Verb) is Post (HTTP Post) and Body remains empty. This is because we have assembled the JSON body in the steps above.
 
-6. Test It  
+6. Test It
+
 This is it. You can now connect your flow to a node (Connect Node -> Select or create a Sandbox node), save your flow and not sample data is being generated and you should receive SIGNL4 alerts on your phone.
 
 You can find a sample script in GitHub:
