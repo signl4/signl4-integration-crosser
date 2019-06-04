@@ -1,10 +1,10 @@
-# Integrating SIGNL4 with Crosser
+# Mobile alerting with tracking & escalation for Crosser
 
 Mobile alerting with tracking, duty planning and escalation for Crosser.
 
 ## Why SIGNL4
 
-Crosser an Industrial IoT platform for easy integration and automation of connected devices.
+Crosser an Industrial IoT platform for easy integration and automation of connected devices. Pairing this powerful IoT platform with SIGNL4 can enhance your daily operations with an extension to your mobile team in the field or on the shop floor.
 
 ![SIGNL4](crosser-signl4.png)
 
@@ -14,7 +14,7 @@ All it takes to pair Crosser and SIGNL4 is an HTTP Request action in Crosser Clo
 
 ## Integration Capabilities
 
-- Service engineers alerted via mobile push, text and voice
+- Alert service engineers via mobile push, text and voice
 - Staff can acknowledge and take ownership for critical events that occur
 - Alerts are escalated in case of no response
 - Communicate within an alert to address a particular problem
@@ -63,7 +63,7 @@ The next step in the flow is the aggregation. This is optional but since it is a
 
 3. Property Mapper
 
-The idea of the Property Mapper is to assemble the message data we would like to send to SIGNL4. This is all JSON.
+The idea of the Property Mapper is to assemble the message data we would like to send to SIGNL4. SIGNL4 requires JSON data.
 
 The property:
 
@@ -96,7 +96,7 @@ The method (Verb) is Post (HTTP Post) and Body remains empty. This is because we
 
 6. Test It
 
-This is it. You can now connect your flow to a node (Connect Node -> Select or create a Sandbox node), save your flow and not sample data is being generated and you should receive SIGNL4 alerts on your phone.
+This is it. You can now connect your flow to a node (Connect Node -> Select or create a Sandbox node), save your flow and now sample data is being generated and you should receive SIGNL4 alerts on your phone.
 
 You can find a sample script in GitHub:
 https://github.com/signl4/signl4-integration-crosser
